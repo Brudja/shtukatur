@@ -165,7 +165,8 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),url(Images/overlay11.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url(Images/overlay11.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -346,7 +347,7 @@ img {
       rgba(47, 48, 58, 0.7) 100%,
       rgba(255, 255, 255, 0) 70%
     ),
-    url(../Images/overlay22.jpg);
+    url(/Images/overlay22.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -359,7 +360,7 @@ img {
         rgba(47, 48, 58, 0.7) 70%,
         rgba(255, 255, 255, 0) 70%
       ),
-      url(../Images/overlay22.jpg);
+      url(./Images/overlay22.jpg);
     height: 800px;
     background-position: 30% 0;
     box-shadow: rgba(0, 0, 0, 0.5);
