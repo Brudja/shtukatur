@@ -165,8 +165,7 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url(../Images/overlay11.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),url(Images/overlay11.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -246,7 +245,7 @@ img {
 
 @media (min-width: 768px) {
   .our-us {
-    flex-direction:row;
+    flex-direction: row;
     font-size: 23px;
     gap: 25px;
     justify-content: center;
@@ -342,7 +341,11 @@ img {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7) 100%, rgba(255, 255, 255, 0) 70%),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.7) 100%,
+      rgba(255, 255, 255, 0) 70%
+    ),
     url(../Images/overlay22.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,14 +354,17 @@ img {
 @media (min-width: 768px) {
   .our-us-second-overlay {
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7) 70%, rgba(255, 255, 255, 0) 70%),
-    url(../Images/overlay22.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.7) 70%,
+        rgba(255, 255, 255, 0) 70%
+      ),
+      url(../Images/overlay22.jpg);
     height: 800px;
     background-position: 30% 0;
     box-shadow: rgba(0, 0, 0, 0.5);
   }
 }
-
 
 .our-us-text {
   color: #e78b0f;
@@ -438,17 +444,15 @@ img {
   }
 }
 
-
-
-.our-us-second-overlay-svg{
-  width:15px;
-  height:15px;
+.our-us-second-overlay-svg {
+  width: 15px;
+  height: 15px;
 }
 
 @media (min-width: 768px) {
   .our-us-second-overlay-svg {
-    width:90px;
-  height:90px;
+    width: 90px;
+    height: 90px;
   }
 }
 
