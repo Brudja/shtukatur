@@ -1,7 +1,7 @@
 :root {
   --main-color: #d38d23;
-  --text-color-black:#000000;
-  --text-color-white:#ffffff;;
+  --text-color-black: #000000;
+  --text-color-white: #ffffff;
 }
 
 body {
@@ -81,22 +81,35 @@ img {
     align-items: center;
     font-size: 13px;
     font-weight: 600;
-    
   }
 }
 
 @media (min-width: 1280px) {
   .container-header {
     align-items: center;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 600;
-    
   }
 }
 
 .leader {
   display: flex;
   justify-content: space-between;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .leader {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leader {
+    width: 1280px;
+  }
 }
 
 .nav {
@@ -108,12 +121,17 @@ img {
   display: flex;
   color: #000000;
   margin-right: 5px;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 12px;
 }
 
 @media (min-width: 768px) {
   .nav-list {
     gap: 30px;
     margin-right: 15px;
+    justify-content: center;
   }
 }
 
@@ -170,7 +188,7 @@ img {
 
 @media (min-width: 768px) {
   .overlay {
-    height: 600px;
+    height: 520px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -437,7 +455,7 @@ img {
 }
 
 .swiper {
-  width: 50%;
+  width: 40%;
   height: 50%;
   object-fit: cover;
 }
@@ -470,16 +488,6 @@ img {
   color: var(--text-color-black);
   text-align: center;
 }
-@media (min-width: 768px) {
-  .footer {
-    
-  }
-}
-@media (min-width: 1280px) {
-  .footer {
-    
-  }
-}
 
 .footer-text {
   display: block;
@@ -490,9 +498,9 @@ img {
 @media (min-width: 768px) {
   .footer-text {
     font-size: 35px;
-  }}
+  }
+}
 
-  
 .footer-list {
   display: flex;
   justify-content: center;
@@ -519,6 +527,40 @@ img {
   }
 }
 
+
+.container-contacts{
+  display: flex;
+  flex-direction:column;
+}
+
+@media (min-width: 768px) {
+  .container-contacts {
+    flex-direction:row ;
+    justify-content: center;
+  }
+}
+
+
+.contacts{
+  color: var(--text-color-black);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contacts {
+    font-size: 50px;
+  }
+}
+
+
 /* =================================================call====================================================== */
 
 .call {
@@ -531,12 +573,11 @@ img {
   background-color: var(--text-color-black);
   text-align: center;
   display: block;
-
   width: 100%;
 }
 
-.call-text{
+.call-text {
   font-size: 43px;
   display: block;
   padding: 0 5px;
-  }
+}
