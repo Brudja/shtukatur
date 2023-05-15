@@ -4,6 +4,10 @@
   --text-color-white: #ffffff;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Roboto Slabo, sans-serif;
   color: var(--main-color);
